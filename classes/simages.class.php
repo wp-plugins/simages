@@ -113,6 +113,11 @@ class Simages {
 	//adds the attrs for the srcset
 	public static function add_simage_attrs( $attrs, $attachment, $size ){
 
+		//don't mess with the image if it doesn't have a specific size
+		if ( is_array( $size ) ){
+			return $attrs;
+		}
+
 		//if we have a srcset for this image
 		if( array_key_exists($size, self::$simages) && count(self::$simages[ $size ]) ){
 
@@ -161,9 +166,13 @@ class Simages {
 			if($set['sizes' ]){
 				$attrs['sizes'] = trim ($set['sizes']);
 			}
+
+			//if we do not have anything inside the srcset attr remove it
+			if( !$attrs['srcset'] ){
+				unset($attrs['srcset']);
+			}
 			
 		}
-
 
 		return $attrs;
 

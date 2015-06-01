@@ -2,7 +2,7 @@
 Contributors: simalam, mikes000
 Tags: responsive images, srcset
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -76,6 +76,9 @@ None yet!
 
 
 == Changelog ==
+
+= 1.1 =
+* Fixes issue with image sizes without a name causing an error and an empty srcset tag showing when no resized images found.
 
 = 1.0 =
 * The first version of the plugin!
