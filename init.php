@@ -3,7 +3,7 @@
 Plugin Name: Responsive Images
 Plugin URI: 
 Description: A simple plugin used to help with responsive images
-Version: 1.0
+Version: 1.1
 Author: Simalam
 Author URI: http://simalam.com
 Author Email: development@simalam.com
